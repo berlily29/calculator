@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#centering {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 58vh;
+    width: 25%;
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px gray;
+}
+#display {
+    display: flex;
+    overflow-x: hidden;
+    padding: 0px 10px 5px 0;
+    height: 6vh;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 2em;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    transition: .5s;
+}
+
+#out {
+    display: flex;
+    height: 6vh;
+    overflow-x: hidden;
+    padding: 0 10px 5px 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: rgb(129, 121, 121);
+    background-color: rgb(45, 45, 45);
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+#numbercont {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    height: 40vh;
+    gap: 11px;
+    color: white;
+    padding: 0 10px;
+}
+
+.numbers {
+    border: solid black 1px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(34, 34, 34);
+
+
+}
+
+.numbers:active {
+    background-color: rgb(59, 59, 59);
+    transform: scale(.9);
+
+}
+
+.operators {
+    background-color: rgb(59, 59, 59);
+
+}
+.operators:active {
+    background-color: rgb(90, 89, 89);
+    transform: scale(.9);
+
+}
+
+.equal:active {
+    background-color: rgb(113, 112, 112);
+
+}
+
+.equal {
+    background-color: rgb(90, 89, 89);
+
+}
+
+#container:hover {
+    transform: scale(1);
+}
+#container {
+    transform: scale(.7);
+    transition: 1s;
+}
+
+#text {
+    display: block;
+    position: absolute;
+    top: 25%;
+}
